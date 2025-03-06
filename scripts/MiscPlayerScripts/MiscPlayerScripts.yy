@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"MiscPlayerScripts",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MiscPlayerScripts",
+  "parent":{
+    "name":"Characters",
+    "path":"folders/Characters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

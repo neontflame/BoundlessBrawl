@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ControlAPlayer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ControlAPlayer",
+  "parent":{
+    "name":"Characters",
+    "path":"folders/Characters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

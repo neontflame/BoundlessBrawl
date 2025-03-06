@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"DamageHandler",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"DamageHandler",
+  "parent":{
+    "name":"Characters",
+    "path":"folders/Characters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
