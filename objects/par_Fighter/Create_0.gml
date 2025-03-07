@@ -3,6 +3,9 @@
 move_speed = 2;
 friction_power = 0.2;
 
+hitWidth = 16;
+hitHeight = 32;
+
 jump_height = 13;
 midair_jump_quant = 1; // the quantity
 

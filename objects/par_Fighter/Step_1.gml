@@ -8,7 +8,7 @@ if (hitstun > 0) {
 }
 	
 if (hitstun < 1) {
-	grounded = check_collision(0, 1);
+	grounded = check_collision(0, 1, par_Solid, false) || check_collision(0, 1, par_Platform, true);
 
 	if (grounded)
 	{

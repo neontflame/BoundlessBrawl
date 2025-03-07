@@ -1,22 +1,14 @@
-function check_collision(_move_x, _move_y) 
+function check_collision(_move_x, _move_y, _collided_obj, _is_plat) 
 {
-	if (place_meeting(x + _move_x, y + _move_y, par_Solid))
+	// if (place_meeting(x + _move_x, y + _move_y, par_Solid
+	if (collision_rectangle((x - hitWidth/2) + _move_x, (y - hitHeight) + _move_y, (x + hitWidth/2) + _move_x, y + _move_y, _collided_obj, true, false))
 	{
+		if (_is_plat) {
+			if (y > _collided_obj.bbox_top) {	return false;	}
+		}
 		return true;
 	}
 	
-	/* don't care lol!
-	var _left_top = tilemap_get_at_pixel(obj_game_manager.collision_tilemap, bbox_left + _move_x, bbox_top + _move_y);
-	var _right_top = tilemap_get_at_pixel(obj_game_manager.collision_tilemap, bbox_right + _move_x, bbox_top + _move_y);
-	var _right_bottom = tilemap_get_at_pixel(obj_game_manager.collision_tilemap, bbox_right + _move_x, bbox_bottom + _move_y);
-	var _left_bottom = tilemap_get_at_pixel(obj_game_manager.collision_tilemap, bbox_left + _move_x, bbox_bottom + _move_y);
-
-	if (_left_top or _right_top or _right_bottom or _left_bottom)
-	{
-		return true;
-	}
-	*/
-
 	return false;
 }
 
@@ -26,7 +18,7 @@ function botherWithCollision() {
 
 	repeat (_move_count)
 	{
-		var _collision_found = check_collision(_move_once, 0);
+		var _collision_found = check_collision(_move_once, 0, par_Solid, false);
 
 		// This checks if collision_found is false, meaning a collision was not found, and the player is free to move once on the X axis.
 		if (!_collision_found)
@@ -52,7 +44,7 @@ function botherWithCollision() {
 
 	repeat (_move_count)
 	{
-		var _collision_found = check_collision(0, _move_once);
+		var _collision_found = check_collision(0, _move_once, par_Solid, false) || check_collision(0, _move_once, par_Platform, true);
 
 		if (!_collision_found)
 		{

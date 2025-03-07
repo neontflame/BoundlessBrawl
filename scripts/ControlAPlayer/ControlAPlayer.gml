@@ -1,4 +1,5 @@
 function key_handler(){
+	// TODO: REWRITE THIS TO ALLOW FOR CUSTOM KEYBINDS LATER
 	key_left = keyboard_check(vk_left);
 	key_down = keyboard_check(vk_down);
 	key_up = keyboard_check(vk_up);
@@ -17,6 +18,14 @@ function player_controller(){
 		if (vel_x < -10) {	vel_x = -10;	}
 	}
 	if (can_control && can_control_attack) {
+		// getting down from platforms
+		if (check_collision(0, 1, par_Platform, true)) {
+			if (key_down) {
+				y += 1;
+				grounded = false;
+			}
+		}
+		
 		if (status != "airdodge" && status != "dmg") {
 		if (status == "dmgcontrollable") {	vel_x += ((key_right - key_left) * move_speed) / 3.25;	}
 		else {	vel_x += (key_right - key_left) * move_speed;	}
