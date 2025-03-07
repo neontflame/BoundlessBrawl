@@ -1,7 +1,19 @@
+function collide_with_thing(_ply, _thing) {
+	return collision_rectangle(	(_ply.x - _ply.hitWidth/2), 
+								(_ply.y - _ply.hitHeight), 
+								(_ply.x + _ply.hitWidth/2), 
+								_ply.y, 
+								_thing, true, false);
+}
+
 function check_collision(_move_x, _move_y, _collided_obj, _is_plat) 
 {
 	// if (place_meeting(x + _move_x, y + _move_y, par_Solid
-	if (collision_rectangle((x - hitWidth/2) + _move_x, (y - hitHeight) + _move_y, (x + hitWidth/2) + _move_x, y + _move_y, _collided_obj, true, false))
+	if (collision_rectangle((x - hitWidth/2) + _move_x, 
+							(y - hitHeight) + _move_y, 
+							(x + hitWidth/2) + _move_x, 
+							y + _move_y, 
+							_collided_obj, true, false))
 	{
 		if (_is_plat) {
 			if (y > _collided_obj.bbox_top) {	return false;	}
