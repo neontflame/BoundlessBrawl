@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script4",
+  "%Name":"coiso_jab",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script4",
+  "name":"coiso_jab",
   "parent":{
     "name":"Scripts",
     "path":"folders/Characters/Coiso/Scripts.yy",
