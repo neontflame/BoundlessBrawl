@@ -65,6 +65,11 @@ function botherWithCollision() {
 		// This 'else' block runs if a collision was found.
 		else
 		{
+			if (status == "dmg") {
+				vel_y = vel_y * -0.85;
+				hurt_frames = hurt_frames * 1.1;
+				break;
+			}
 			vel_y = 0;
 			if (grounded) { // take out this check to make upside down wavedashing possible
 				midair_jump_count = 0;

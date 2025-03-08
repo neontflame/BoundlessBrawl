@@ -27,3 +27,4 @@ if (hitstun < 1) {
 		if (grav_enabled && grav_enabled_attack) { vel_y += grav_speed; }
 	}
 }
+

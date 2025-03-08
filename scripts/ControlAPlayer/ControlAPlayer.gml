@@ -2,6 +2,7 @@ function key_handler(){
 	// TODO: REWRITE THIS TO ALLOW FOR CUSTOM KEYBINDS LATER
 	key_left = keyboard_check(vk_left);
 	key_down = keyboard_check(vk_down);
+	key_down_press = keyboard_check_pressed(vk_down);
 	key_up = keyboard_check(vk_up);
 	key_right = keyboard_check(vk_right);
 	
@@ -17,8 +18,14 @@ function player_controller(){
 		if (vel_x > 10) {	vel_x = 10;	}
 		if (vel_x < -10) {	vel_x = -10;	}
 	}
-	if (can_control && can_control_attack) {
+	if (can_control && can_control_attack && status != "dmg") {
 		// getting down from platforms
+		if (key_down_press) {
+			if (!grounded) {
+				vel_y = 10;
+			}
+		}
+		
 		if (check_collision(0, 1, par_Platform, true)) {
 			if (key_down) {
 				y += 1;

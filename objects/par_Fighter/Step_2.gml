@@ -17,5 +17,5 @@ if (airdodge_anim_timer_cd == 0 && (status == "airdodge" || status == "freefall"
 
 if (keyboard_check_pressed(ord("V"))) {
 	// player, angle, damage
-	dmg_player(self, 25, 5, 0.25, 10, 10);
+	dmg_player(self, 25, 5, 0.25, 50, 10);
 }
