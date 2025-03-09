@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"HitboxHandler",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"HitboxHandler",
+  "parent":{
+    "name":"Characters",
+    "path":"folders/Characters.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

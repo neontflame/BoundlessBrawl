@@ -1,5 +1,8 @@
 // THIS IS FROM THE PLATFORMER TEMPLATE BTW
 // i just took out comments because. idk it just made it easier for me i guess
+camX = 0;
+camY = 0;
+
 move_speed = 2;
 friction_power = 0.2;
 

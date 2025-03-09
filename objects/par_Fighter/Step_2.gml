@@ -19,3 +19,8 @@ if (keyboard_check_pressed(ord("V"))) {
 	// player, angle, damage
 	dmg_player(self, 25, 5, 0.25, 50, 10);
 }
+
+camX = lerp(camX, x - 420, 0.05);
+camY = lerp(camY, y - 240, 0.05);
+
+// camera_set_view_pos(view_camera[0], camX, camY);
