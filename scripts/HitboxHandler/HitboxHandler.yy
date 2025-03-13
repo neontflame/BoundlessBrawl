@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"HitboxHandler",
   "parent":{
-    "name":"Characters",
-    "path":"folders/Characters.yy",
+    "name":"Scripts",
+    "path":"folders/Characters/Global/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

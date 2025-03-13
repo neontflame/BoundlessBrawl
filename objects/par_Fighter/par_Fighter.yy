@@ -12,8 +12,8 @@
   "name":"par_Fighter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Characters",
-    "path":"folders/Characters.yy",
+    "name":"Objects",
+    "path":"folders/Characters/Global/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

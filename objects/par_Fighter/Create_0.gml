@@ -1,5 +1,6 @@
 // THIS IS FROM THE PLATFORMER TEMPLATE BTW
 // i just took out comments because. idk it just made it easier for me i guess
+fitname = "Fighter";
 camX = 0;
 camY = 0;
 
@@ -13,6 +14,7 @@ jump_height = 13;
 midair_jump_quant = 1; // the quantity
 
 status = "default";
+anim = "idle";
 
 grav_enabled = true;
 grav_enabled_attack = true; // just in case
@@ -25,11 +27,14 @@ grounded = false;
 grounded_x = x;
 grounded_y = y;
 
+is_running = false;
+
 // technicalities
 hitstun = 0;
 horizontal_di = 0;
 vertical_di = 0;
 
+atk_name = "";
 can_control = true;
 can_control_attack = true; // justin case 2
 dmg_percent = 0;

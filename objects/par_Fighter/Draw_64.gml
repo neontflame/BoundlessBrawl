@@ -17,9 +17,9 @@ draw_text(view_xport + 0, view_yport + 128 + 64, "hitstun: " + string(hitstun));
 draw_text(view_xport + 0, view_yport + 128 + 80, "attack timer: " + string(attack_timer));
 
 
-
+// CHARACTER HUD
 draw_sprite(hud_FighterHolder, 0, view_xport + 9, view_yport+397);
 draw_set_font(nums);
 draw_text(view_xport + 79, view_yport + 405, string(dmg_percent) + "%");
 draw_set_font(hud_Fighterfont);
-draw_text(view_xport + 82, view_yport + 439, "Coiso");
+draw_text(view_xport + 82, view_yport + 439, fitname);
