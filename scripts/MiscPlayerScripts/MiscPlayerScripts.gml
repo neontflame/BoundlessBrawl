@@ -71,12 +71,14 @@ function botherWithCollision() {
 				break;
 			}
 			vel_y = 0;
-			if (grounded) { // take out this check to make upside down wavedashing possible
+			if (grounded) {
+				has_jumped = false; 
+				// take out this check to make upside down wavedashing possible
 				midair_jump_count = 0;
 				switch (status) {
 					case "airdodge":
-						vel_x = vel_x * 1.5;
 						status = "default";
+						vel_x = vel_x * airdodge_coefficient;
 					case "freefall":
 						status = "default";
 					case "dmgcontrollable":
@@ -97,7 +99,7 @@ function botherWithCollision() {
 
 function daFlip(){
 	// da flip
-	if (grounded) {
+	if (grounded && (can_control && can_control_attack)) {
 		if (key_left)
 		{
 			image_xscale = -1;

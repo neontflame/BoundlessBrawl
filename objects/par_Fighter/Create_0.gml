@@ -11,7 +11,7 @@ friction_power = 0.2;
 hitWidth = 16;
 hitHeight = 32;
 
-jump_height = 13;
+jump_height = 17;
 midair_jump_quant = 1; // the quantity
 
 status = "default";
@@ -19,7 +19,7 @@ anim = "idle";
 
 grav_enabled = true;
 grav_enabled_attack = true; // just in case
-grav_speed = 0.85;
+grav_speed = 1;
 
 vel_x = 0;
 vel_y = 0;
@@ -42,9 +42,10 @@ dmg_percent = 0;
 hurt_frames = 0;
 no_hurt_frames = 0;
 midair_jump_count = 0; // how many jumps done
+has_jumped = false;
 
 // airdodge
-airdodge_coefficient = 6;
+airdodge_coefficient = 10;
 
 airdodge_timer = 10;
 airdodge_anim_timer = 30;

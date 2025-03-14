@@ -14,6 +14,10 @@ function make_hitbox(_anchor, _owner, _size, x_off, y_off, timer, _angle, _damag
 		knockframe = _knockframe;
 		hitstun = _hitstun;
 		
+		if (anchor.image_xscale == -1) {
+			angle = 360 - angle;
+		}
+
 		if (timer > 0) {
 			alarm[0] = timer;
 		}

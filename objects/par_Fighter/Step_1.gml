@@ -12,6 +12,7 @@ if (hitstun < 1) {
 
 	if (grounded)
 	{
+		if (status == "airdodge") { status = "default"; }
 		grounded_x = x;
 		grounded_y = y;
 	}

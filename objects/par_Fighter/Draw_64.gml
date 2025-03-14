@@ -16,6 +16,8 @@ draw_text(view_xport + 0, view_yport + 128 + 64, "hitstun: " + string(hitstun));
 
 draw_text(view_xport + 0, view_yport + 128 + 80, "attack timer: " + string(attack_timer));
 
+draw_text(view_xport + 0, view_yport + 128 + 128, "has jumped: " + string(has_jumped));
+
 
 // CHARACTER HUD
 draw_sprite(hud_FighterHolder, 0, view_xport + 9, view_yport+397);

@@ -58,12 +58,14 @@ function player_controller(){
 		// ground jump
 		if (grounded && key_jump) {
 			vel_y = -jump_height;
+			has_jumped = true;
 		}
 
 		// midair jumps
 		if (!grounded && key_jump && midair_jump_count < midair_jump_quant) {
 			midair_jump_count += 1;
 			vel_y = -jump_height;
+			has_jumped = true;
 		}
 		
 		// AIRDODGE 
