@@ -5,6 +5,7 @@ camX = 0;
 camY = 0;
 
 move_speed = 2;
+run_speed = 2.5;
 friction_power = 0.2;
 
 hitWidth = 16;

@@ -56,6 +56,7 @@
     {"id":{"name":"HitboxHandler","path":"scripts/HitboxHandler/HitboxHandler.yy",},},
     {"id":{"name":"MiscPlayerScripts","path":"scripts/MiscPlayerScripts/MiscPlayerScripts.yy",},},
     {"id":{"name":"fitspr_Sonic_idle","path":"sprites/fitspr_Sonic_idle/fitspr_Sonic_idle.yy",},},
+    {"id":{"name":"fitspr_Sonic_run","path":"sprites/fitspr_Sonic_run/fitspr_Sonic_run.yy",},},
     {"id":{"name":"fitspr_Sonic_walk","path":"sprites/fitspr_Sonic_walk/fitspr_Sonic_walk.yy",},},
     {"id":{"name":"floorcoiso","path":"sprites/floorcoiso/floorcoiso.yy",},},
     {"id":{"name":"hud_FighterHolder","path":"sprites/hud_FighterHolder/hud_FighterHolder.yy",},},

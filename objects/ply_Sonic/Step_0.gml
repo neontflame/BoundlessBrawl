@@ -4,6 +4,10 @@ coiso_jab_step();
 
 if (anim == "idle") {
 		sprite_index = fitspr_Sonic_idle;	
-} else if (anim == "walk") {
+} 
+if (anim == "walk") {
 		sprite_index = fitspr_Sonic_walk;
+}
+if (anim == "run") {
+		sprite_index = fitspr_Sonic_run;
 }
