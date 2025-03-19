@@ -25,3 +25,11 @@ function make_hitbox(_anchor, _owner, _size, x_off, y_off, timer, _angle, _damag
 	
 	return hitboxy;
 }
+
+function kill_hitboxes(_anchor, _owner){
+	with (hit_Hitbox) {
+		if (_anchor == self.anchor || _owner == self.owner) {
+			instance_destroy(self);
+		}
+	}
+}

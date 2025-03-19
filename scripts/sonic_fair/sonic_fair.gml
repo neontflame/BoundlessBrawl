@@ -8,6 +8,7 @@ function sonic_fair_step(){
 	if (sprite_index == fitspr_Sonic_eagle) {
 		if (grounded) {
 			attack_timer = 0;
+			kill_hitboxes(self, self);
 		}
 	}
 }
