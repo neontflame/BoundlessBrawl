@@ -1,7 +1,10 @@
 event_inherited();
 
-coiso_jab_step();
+// THE WHOLE ATTACK SHEBANG
+sonic_neutair_step();
+sonic_fair_step();
 
+/// ANIMATIONS ///
 /*
 idk if its a gamemaker beta quirk but for some 
 godforsaken reason switches dont work properly
@@ -21,4 +24,15 @@ if (anim == "jump") {
 }
 if (anim == "airdodge") {
 		sprite_index = fitspr_Sonic_airdodge;
+}
+if (anim == "fall") {
+		sprite_index = fitspr_Sonic_fall;
+}
+
+// ATTACKS WOO
+if (anim == "neutralair") {
+		sprite_index = fitspr_Sonic_instashield;
+}
+if (anim == "fair") {
+		sprite_index = fitspr_Sonic_eagle;
 }

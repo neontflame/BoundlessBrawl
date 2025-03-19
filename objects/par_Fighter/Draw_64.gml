@@ -20,8 +20,11 @@ draw_text(view_xport + 0, view_yport + 128 + 128, "has jumped: " + string(has_ju
 
 
 // CHARACTER HUD
-draw_sprite(hud_FighterHolder, 0, view_xport + 9, view_yport+397);
+hudX = pid * 210;
+hudY = 375;
+
+draw_sprite(hud_FighterHolder, 0, view_xport + 9 + hudX, view_yport+397);
 draw_set_font(nums);
-draw_text(view_xport + 79, view_yport + 405, string(dmg_percent) + "%");
+draw_text(view_xport + 79 + hudX, view_yport + 405, string(dmg_percent) + "%");
 draw_set_font(hud_Fighterfont);
-draw_text(view_xport + 82, view_yport + 439, fitname);
+draw_text(view_xport + 82 + hudX, view_yport + 439, fitname);

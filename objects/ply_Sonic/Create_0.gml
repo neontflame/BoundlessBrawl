@@ -9,4 +9,6 @@ friction_power = 0.2;
 hitWidth = 32;
 hitHeight = 48;
 
+rings = 0;
+
 coiso_jab_init();

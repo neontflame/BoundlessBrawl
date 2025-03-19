@@ -69,12 +69,14 @@ function player_controller(){
 		}
 		
 		// AIRDODGE 
-		if (!grounded && key_dodge && (status != "freefall" && status != "airdodge")) {
-			status = "airdodge";
-			reset_airdodge_timer();
-			no_hurt_frames = airdodge_timer;
-			vel_x = (key_right - key_left) * (move_speed * airdodge_coefficient);
-			vel_y = (key_down - key_up) * (move_speed * airdodge_coefficient);
+		if (key_dodge && (status != "freefall" && status != "airdodge" && status != "dodge")) {
+			if (!grounded) {
+				status = "airdodge";
+				reset_airdodge_timer();
+				no_hurt_frames = airdodge_timer;
+				vel_x = (key_right - key_left) * (move_speed * airdodge_coefficient);
+				vel_y = (key_down - key_up) * (move_speed * airdodge_coefficient);
+			}
 		}
 	}
 }

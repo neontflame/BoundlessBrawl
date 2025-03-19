@@ -1,8 +1,10 @@
 // THIS IS FROM THE PLATFORMER TEMPLATE BTW
 // i just took out comments because. idk it just made it easier for me i guess
 fitname = "Fighter";
+pid = 0;
 camX = 0;
 camY = 0;
+
 
 move_speed = 2;
 run_speed = 2.5;
@@ -29,6 +31,7 @@ grounded_x = x;
 grounded_y = y;
 
 is_running = false;
+is_mirrored = false;
 
 // technicalities
 hitstun = 0;

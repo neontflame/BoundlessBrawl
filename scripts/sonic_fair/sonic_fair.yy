@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sonic_fair",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sonic_fair",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Characters/Sonic/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

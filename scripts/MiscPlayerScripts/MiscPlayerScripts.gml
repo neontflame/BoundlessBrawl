@@ -102,11 +102,13 @@ function daFlip(){
 	if (grounded && (can_control && can_control_attack)) {
 		if (key_left)
 		{
+			is_mirrored = true;
 			image_xscale = -1;
 			image_yscale = 1;
 		}
 		else if (key_right)
 		{
+			is_mirrored = false;
 			image_xscale = 1;
 			image_yscale = 1;
 		}

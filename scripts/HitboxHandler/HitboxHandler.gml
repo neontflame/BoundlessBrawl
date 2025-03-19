@@ -1,5 +1,5 @@
 function make_hitbox(_anchor, _owner, _size, x_off, y_off, timer, _angle, _damage, _knockback, _knockframe, _hitstun){
-	var hitboxy = instance_create_layer(-1000, -1000, 0, hit_Hitbox); 
+	var hitboxy = instance_create_depth(-1000, -1000, -100, hit_Hitbox); 
 	with (hitboxy) {
 		anchor = _anchor;
 		owner = _owner;
